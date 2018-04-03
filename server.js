@@ -8,7 +8,7 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.engine("handlebars", exprhbs({defaultLayout: main}));
+app.engine("handlebars", exprhbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 app.listen(PORT, function() {
